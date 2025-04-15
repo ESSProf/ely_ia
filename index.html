@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolução da Inteligência Artificial</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e1e2f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            color: #2a2a72;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e2f;
+            color: #fff;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A Evolução da Inteligência Artificial</h1>
+        <p>Bem-vindo(a), <span id="nome-usuário">Fulano</span>! Vamos explorar o fascinante mundo da IA.</p>
+    </header>
+
+    <section>
+        <h2>O que é Inteligência Artificial?</h2>
+        <p>A <strong>Inteligência Artificial (IA)</strong> é uma área da ciência da computação dedicada a criar sistemas capazes de realizar tarefas que normalmente requerem inteligência humana, como aprender, raciocinar e tomar decisões.</p>
+
+        <h2>Principais Marcos da IA</h2>
+        <ul>
+            <li><strong>1950:</strong> Alan Turing propõe o "Teste de Turing".</li>
+            <li><strong>1956:</strong> Conferência de Dartmouth marca o nascimento oficial da IA.</li>
+            <li><strong>1997:</strong> O computador Deep Blue derrota o campeão mundial de xadrez Garry Kasparov.</li>
+            <li><strong>2011:</strong> IBM Watson vence no programa Jeopardy!</li>
+            <li><strong>2020 em diante:</strong> Avanços com redes neurais, GPTs e IA generativa.</li>
+        </ul>
+
+        <h2>Como a IA está presente no nosso dia a dia?</h2>
+        <p>Hoje, a IA está em <strong>assistentes virtuais</strong>, <strong>aplicativos de tradução</strong>, <strong>recomendações de filmes</strong>, <strong>carros autônomos</strong> e muito mais.</p>
+
+        <img id="imagem-ia" src="imagem/ia-futurista.png" alt="Ilustração sobre Inteligência Artificial com elementos futuristas">
+    </section>
+
+    <footer>
+        <p>Página desenvolvida para mostrar a evolução da IA | Por Alura Start</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const imagemIA = document.getElementById("imagem-ia");
+
+            imagemIA.addEventListener("click", () => {
+                alert("Curiosidade: A IA generativa pode criar textos, músicas, imagens e até código de programação!");
+            });
+
+            const nomeUsuario = prompt("Qual é o seu nome?");
+            if (nomeUsuario) {
+                document.getElementById("nome-usuário").textContent = nomeUsuario;
+            }
+        });
+    </script>
+</body>
+</html>
